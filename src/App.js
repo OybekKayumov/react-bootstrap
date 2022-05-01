@@ -9,24 +9,28 @@ function App() {
       <header className='App-header'>
         <Container>
           <Form>
-            <Form.Group controlId="formEmail">
-              <Form.Label>Email Address</Form.Label>
-              <Form.Control type="email" placeholder="example@email.com" />
-              <Form.Text className="text-muted">
-                Enter valid email address
-              </Form.Text>
-            </Form.Group>
-            </Form>
-          <Form>
-            <Form.Group controlId="formPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="password" />
-              <Form.Text className="text-muted">
-              Password must be at least 8 characters in length
-              </Form.Text>
-            </Form.Group>
+            <Row>
+              <Col>
+                <Form.Group controlId="formEmail">
+                  <Form.Label>Email Address</Form.Label>
+                  <Form.Control type="email" placeholder="example@email.com" />
+                  <Form.Text className="text-muted">
+                    Enter valid email address
+                  </Form.Text>
+                </Form.Group>
+              </Col>
+              <Col>
+                <Form.Group controlId="formPassword">
+                  <Form.Label>Password</Form.Label>
+                  <Form.Control type="password" placeholder="password" />
+                  <Form.Text className="text-muted">
+                  Password must be at least 8 characters in length
+                  </Form.Text>
+                </Form.Group>
+              </Col>
+            </Row>
             <Button className="mb-3" variant="secondary" type="submit">Login</Button>
-          </Form>
+          </Form>          
           
           <Card className="mb-3" style={{ color: "#333", marginBottom: 20 }}>
             <Card.Img src="https://picsum.photos/200/50" />
