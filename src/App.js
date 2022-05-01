@@ -7,17 +7,25 @@ function App() {
   return (
     <div className="App">
       <header className='App-header'>
-      <Form>
-        <Form.Group>
-          <Form.Label>Email Address</Form.Label>
-          <Form.Control type="email" placeholder="example@email.com" />
-          <Form.Text className="text-muted">
-            Enter valid email address
-          </Form.Text>
-        </Form.Group>
-
-
-      </Form>
+        <Form>
+          <Form.Group>
+            <Form.Label>Email Address</Form.Label>
+            <Form.Control type="email" placeholder="example@email.com" />
+            <Form.Text className="text-muted">
+              Enter valid email address
+            </Form.Text>
+          </Form.Group>
+          </Form>
+        <Form>
+          <Form.Group>
+            <Form.Label>Password</Form.Label>
+            <Form.Control type="password" placeholder="password" />
+            <Form.Text className="text-muted">
+            Password must be at least 8 characters in length
+            </Form.Text>
+          </Form.Group>
+        </Form>
+        
         <Card className="mb-3" style={{ color: "#333", marginBottom: 20 }}>
           <Card.Img src="https://picsum.photos/200/50" />
           <Card.Body>
