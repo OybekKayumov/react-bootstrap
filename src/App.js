@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <header className='App-header'>
         <Form>
-          <Form.Group>
+          <Form.Group controlId="formEmail">
             <Form.Label>Email Address</Form.Label>
             <Form.Control type="email" placeholder="example@email.com" />
             <Form.Text className="text-muted">
@@ -17,13 +17,14 @@ function App() {
           </Form.Group>
           </Form>
         <Form>
-          <Form.Group>
+          <Form.Group controlId="formPassword">
             <Form.Label>Password</Form.Label>
             <Form.Control type="password" placeholder="password" />
             <Form.Text className="text-muted">
             Password must be at least 8 characters in length
             </Form.Text>
           </Form.Group>
+          <Button variant="secondary" type="submit">Login</Button>
         </Form>
         
         <Card className="mb-3" style={{ color: "#333", marginBottom: 20 }}>
