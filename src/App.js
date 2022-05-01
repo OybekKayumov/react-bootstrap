@@ -7,10 +7,11 @@ function App() {
   return (
     <div className="App">
       <header className='App-header'>
-        <Container>
+      {/* fluid full screen */}
+        <Container fluid>
           <Form>
             <Row>
-              <Col>
+              <Col md>
                 <Form.Group controlId="formEmail">
                   <Form.Label>Email Address</Form.Label>
                   <Form.Control type="email" placeholder="example@email.com" />
@@ -19,7 +20,8 @@ function App() {
                   </Form.Text>
                 </Form.Group>
               </Col>
-              <Col>
+              {/* make responsible md */}
+              <Col md> 
                 <Form.Group controlId="formPassword">
                   <Form.Label>Password</Form.Label>
                   <Form.Control type="password" placeholder="password" />
